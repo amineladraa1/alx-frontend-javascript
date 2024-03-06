@@ -1,6 +1,7 @@
 // 3-all.js
 
-import uploadPhoto, createUser from "./utils.js";
+import uploadPhoto from "./utils.js";
+import createUser from "./utils.js";
 
 export default function handleProfileSignup() {
     Promise.all([uploadPhoto(), createUser()])
