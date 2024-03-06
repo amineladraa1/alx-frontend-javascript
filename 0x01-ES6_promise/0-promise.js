@@ -1,8 +1,11 @@
+// 0-promise.js
+
+// This function simulates an asynchronous API call
 export default function getResponseFromAPI() {
-   const myPromise = new Promise((resolve, reject) => {
-           setTimeout(() => {
-           resolve("foo");
-          }, 300);
-   return myPromise;
-});
+    return new Promise((resolve, reject) => {
+        // Simulate an API call that resolves after 1 second
+        setTimeout(() => {
+            resolve("Response from API");
+        }, 1000);
+    });
 }
